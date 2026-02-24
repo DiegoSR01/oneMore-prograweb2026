@@ -431,3 +431,80 @@ color: #b10b60;
     font-weight: 600;
 }
 
+
+/*categorías mejorada */
+.info-section {
+    background-color: #f8fafce5; 
+    padding: 80px 20px;
+    text-align: center;
+}
+
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.category-card {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Estilos de los Iconos */
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-wrapper span {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Colores de los círculos */
+.blue { background-color: #3b82f6; }
+.green { background-color: #10b981; }
+.orange { background-color: #f97316; }
+.purple { background-color: #a855f7; }
+
+
+.category-card h3 {
+    color: #1e293b;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.category-card h4 {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
