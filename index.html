@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primer página web</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search,shopping_cart"
+    />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <img src="logo_onemore.png" alt="logo" width="60px" />
+        <a href="#inicio" class="brand">OneMore!</a>
+        <ul class="nav-links-centered">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#proteinas">Proteínas</a></li>
+          <li><a href="#creatina">Creatina</a></li>
+          <li><a href="#preworkout">Pre-Workout</a></li>
+          <li><a href="#accesorios">Accesorios</a></li>
+        </ul>
+        <ul class="nav-links-right">
+          <li>
+            <a href="#buscar"
+              ><span class="material-symbols-outlined">search</span></a
+            >
+          </li>
+          <li>
+            <a href="#cart"
+              ><span class="material-symbols-outlined">shopping_cart</span></a
+            >
+          </li>
+        </ul>
+        <a href="#login" class="nav-login">Ingresar</a>
+      </nav>
+    </header>
+    <main id="inicio">
+      <section class="hero" id="heroCarousel">
+        <!-- Radio buttons ocultos para controlar el carrusel -->
+        <input type="radio" name="carousel" id="slide1" checked />
+        <input type="radio" name="carousel" id="slide2" />
+        <input type="radio" name="carousel" id="slide3" />
+        <input type="radio" name="carousel" id="slide4" />
+
+        <!-- Slides del carrusel -->
+        <div class="carousel-slides">
+          <div class="carousel-slide slide-1">
+            <div class="hero-inner">
+              <h1>Alcanza Tus Objetivos con los Mejores Suplementos</h1>
+              <p class="hero-sub">
+                Productos de calidad premium para deportistas que entrenan en
+                serio
+              </p>
+              <div class="hero-actions">
+                <a href="#contacto" class="btn primary">Comprar ahora</a>
+                <a href="#servicios" class="btn ghost">Ver catálogo</a>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-num">+500</div>
+                  <div class="stat-label">Clientes Satisfechos</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Productos Auténticos</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">24/7</div>
+                  <div class="stat-label">Atención al Cliente</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide slide-2">
+            <div class="hero-inner">
+              <h1>Proteínas de Alta Calidad</h1>
+              <p class="hero-sub">
+                Construye músculo con las mejores proteínas del mercado
+              </p>
+              <div class="hero-actions">
+                <a href="#proteinas" class="btn primary">Ver Proteínas</a>
+                <a href="#servicios" class="btn ghost">Ver catálogo</a>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-num">25g+</div>
+                  <div class="stat-label">Proteína por Servida</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">0%</div>
+                  <div class="stat-label">Azúcares Añadidos</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">10+</div>
+                  <div class="stat-label">Sabores Disponibles</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide slide-3">
+            <div class="hero-inner">
+              <h1>Pre-Workout de Potencia Máxima</h1>
+              <p class="hero-sub">
+                Energía explosiva para entrenamientos intensos
+              </p>
+              <div class="hero-actions">
+                <a href="#preworkout" class="btn primary">Ver Pre-Workout</a>
+                <a href="#servicios" class="btn ghost">Ver catálogo</a>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-num">300mg</div>
+                  <div class="stat-label">Cafeína Natural</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">3g</div>
+                  <div class="stat-label">Creatina Monohidrato</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">30</div>
+                  <div class="stat-label">Servidas por Envase</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide slide-4">
+            <div class="hero-inner">
+              <h1>Creatina Pura y Efectiva</h1>
+              <p class="hero-sub">
+                Aumenta tu fuerza y resistencia con la mejor creatina
+              </p>
+              <div class="hero-actions">
+                <a href="#creatina" class="btn primary">Ver Creatina</a>
+                <a href="#servicios" class="btn ghost">Ver catálogo</a>
+              </div>
+              <div class="stats">
+                <div class="stat">
+                  <div class="stat-num">5g</div>
+                  <div class="stat-label">Dosis Recomendada</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Micronizada</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-num">60</div>
+                  <div class="stat-label">Servidas por Envase</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controles de navegación -->
+        <label for="slide4" class="carousel-control prev" aria-label="Anterior">
+          &#10094;
+        </label>
+        <label
+          for="slide2"
+          class="carousel-control next"
+          aria-label="Siguiente"
+        >
+          &#10095;
+        </label>
+
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <label for="slide1" aria-label="Ir al slide 1"></label>
+          <label for="slide2" aria-label="Ir al slide 2"></label>
+          <label for="slide3" aria-label="Ir al slide 3"></label>
+          <label for="slide4" aria-label="Ir al slide 4"></label>
+        </div>
+      </section>
+    </main>
+
+    <section id="paquetes" class="section packages">
+      <div class="container">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="pricing">
+          <article class="price-card">
+            <div class="price-head">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+      
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+                      <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+      
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <p class="price-sub">"Excelente calidad de productos y entrega rápida. Muy recomendable."</p>
+            </div>
+            <p class="fineprint">- Carlos M.</p>
+          </article>
+          <article class="price-card">
+            <div class="price-head">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+      
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+                      <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+      
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <p class="price-sub">"Los mejores suplementos que he probado. Resultados visibles en pocas semanas."</p>
+            </div>
+            <p class="fineprint">- Ana L.</p>
+          </article>
+          <article class="price-card">
+            <div class="price-head">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+                      <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#f7ca26"
+              >
+                <path
+                  d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Z"
+                />
+              </svg>
+              <p class="price-sub">"Atención al cliente excepcional. Siempre dispuestos a ayudar."</p>
+            </div>
+            <p class="fineprint">- Roberto C.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--parte azul claro-->
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>¿Listo para Empezar?</h2>
+        <p>Descubre nuestra amplia gama de suplementos deportivos de calidad</p>
+        <a href="#" class="btn-blanco">Explorar Productos</a>
+      </div>
+    </section>
+
+    <!-- infromacion de footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <h2 class="footer-logo">OneMore!</h2>
+          <p>
+            Tu tienda especializada en suplementos deportivos de calidad para
+            alcanzar tus objetivos.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Categorías</h3>
+          <ul>
+            <li><a href="#">Proteínas</a></li>
+            <li><a href="#">Creatina</a></li>
+            <li><a href="#">Pre-Workout</a></li>
+            <li><a href="#">Accesorios</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Ayuda</h3>
+          <ul>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Envíos y Devoluciones</a></li>
+            <li><a href="#">Métodos de Pago</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
