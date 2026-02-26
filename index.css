@@ -27,7 +27,7 @@ ul{
 .site-header{
     position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 100;
     background: #fff;
 }
 .nav{
